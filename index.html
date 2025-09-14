@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - María González</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%231877f2'><path d='M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z'/></svg>">
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo">
+                <h1>facebook</h1>
+            </div>
+            <div class="search-container">
+                <input type="text" class="search-input" placeholder="Buscar en Facebook">
+                <div class="search-icon">🔍</div>
+            </div>
+            <div class="header-actions">
+                <button class="header-btn" title="Inicio">🏠</button>
+                <button class="header-btn" title="Amigos">👥</button>
+                <button class="header-btn" title="Messenger">💬</button>
+                <button class="header-btn" title="Notificaciones">🔔</button>
+                <div class="profile-menu">
+                    <div class="profile-avatar-small"></div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <aside class="left-sidebar">
+            <div class="profile-card">
+                <div class="cover-photo">
+                    <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=400&h=120&fit=crop&crop=center" alt="Foto de portada" class="cover-image">
+                </div>
+                <div class="profile-image">
+                    <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=120&h=120&fit=crop&crop=face" alt="María González" class="avatar-image">
+                </div>
+                <div class="profile-name">
+                    <h2>Juan felipe</h2>
+                    <p class="profile-subtitle">Analista de datos</p>
+                </div>
+                <div class="profile-stats">
+                    <div class="stat">
+                        <span class="stat-number">1,247</span>
+                        <span class="stat-label">Amigos</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">89</span>
+                        <span class="stat-label">Fotos</span>
+                    </div>
+                </div>
+                <div class="profile-info">
+                    <div class="info-item">
+                        <span class="info-icon">📍</span>
+                        <span>Cali, Colombia</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">💼</span>
+                        <span>Analista de datos</span>
+                    </div>
+                    <div class="info-item">
+                        <span class="info-icon">🎓</span>
+                        <span>Universidad del valle</span>
+                    </div>
+                    <div class="friends-section">
+                        <h3>Amigos (1,247)</h3>
+                        <div class="friends-grid">
+                            <div class="friend-card">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Carlos" class="friend-avatar">
+                                <span class="friend-name">Carlos</span>
+                            </div>
+                            <div class="friend-card">
+                                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=60&h=60&fit=crop&crop=face" alt="Ana" class="friend-avatar">
+                                <span class="friend-name">Ana</span>
+                            </div>
+                            <div class="friend-card">
+                                <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=60&h=60&fit=crop&crop=face" alt="Luis" class="friend-avatar">
+                                <span class="friend-name">Luis</span>
+                            </div>
+                            <div class="friend-card">
+                                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=60&h=60&fit=crop&crop=face" alt="Sofia" class="friend-avatar">
+                                <span class="friend-name">Sofia</span>
+                            </div>
+                            <div class="friend-card">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=60&h=60&fit=crop&crop=face" alt="Miguel" class="friend-avatar">
+                                <span class="friend-name">Miguel</span>
+                            </div>
+                            <div class="friend-card">
+                                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=60&h=60&fit=crop&crop=face" alt="Elena" class="friend-avatar">
+                                <span class="friend-name">Elena</span>
+                            </div>
+                        </div>
+                        <div class="friends-actions">
+                            <button class="see-all-btn">Ver todos los amigos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content-area">
+            <nav class="nav-tabs">
+                <button class="nav-tab active" data-section="muro">
+                    <span class="tab-icon">📝</span>
+                    <span>Muro</span>
+                </button>
+                <button class="nav-tab" data-section="info">
+                    <span class="tab-icon">ℹ️</span>
+                    <span>Información</span>
+                </button>
+                <button class="nav-tab" data-section="photos">
+                    <span class="tab-icon">📷</span>
+                    <span>Fotos</span>
+                </button>
+                <button class="nav-tab" data-section="boxes">
+                    <span class="tab-icon">📦</span>
+                    <span>Más</span>
+                </button>
+            </nav>
+
+            <div class="content-sections">
+                <div id="muro-section" class="section active">
+                    <div class="post-creator">
+                        <div class="creator-header">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="María" class="creator-avatar">
+                            <textarea placeholder="¿Qué estás pensando, María?" class="post-input"></textarea>
+                        </div>
+                        <div class="creator-divider"></div>
+                        <div class="post-actions">
+                            <button class="action-btn">
+                                <span class="action-icon">📷</span>
+                                <span>Foto/Video</span>
+                            </button>
+                            <button class="action-btn">
+                                <span class="action-icon">😊</span>
+                                <span>Sentimiento</span>
+                            </button>
+                            <button class="share-btn">Publicar</button>
+                        </div>
+                    </div>
+                    
+                    <div class="feed-filters">
+                        <button class="filter-btn active">
+                            <span class="filter-icon">📋</span>
+                            <span>Publicaciones</span>
+                        </button>
+                        <button class="filter-btn">
+                            <span class="filter-icon">👤</span>
+                            <span>Solo María</span>
+                        </button>
+                    </div>
+
+                    <div class="posts-container">
+                        <article class="post">
+                            <div class="post-header">
+                                <img src="https://images.unsplash.com/photo-1494790108755-2616b612b786?w=40&h=40&fit=crop&crop=face" alt="María" class="post-avatar">
+                                <div class="post-info">
+                                    <h4>María González</h4>
+                                    <div class="post-meta">
+                                        <time>Hace 2 horas</time>
+                                        <span class="privacy-icon">🌍</span>
+                                    </div>
+                                </div>
+                                <button class="post-menu">⋯</button>
+                            </div>
+                            <div class="post-content">
+                                <p>¡Increíble día trabajando en el nuevo proyecto de branding! La creatividad no tiene límites cuando trabajas con un equipo tan talentoso. 🎨✨</p>
+                                <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=500&h=300&fit=crop" alt="Proyecto de diseño" class="post-image">
+                            </div>
+                            <div class="post-stats">
+                                <div class="reactions">
+                                    <span class="reaction-icons">👍❤️😊</span>
+                                    <span class="reaction-count">24 personas</span>
+                                </div>
+                                <div class="engagement-stats">
+                                    <span>8 comentarios</span>
+                                    <span>3 veces compartido</span>
+                                </div>
+                            </div>
+                            <div class="post-interactions">
+                                <button class="interaction-btn like-btn">
+                                    <span class="interaction-icon">👍</span>
+                                    <span>Me gusta</span>
+                                </button>
+                                <button class="interaction-btn">
+                                    <span class="interaction-icon">💬</span>
+                                    <span>Comentar</span>
+                                </button>
+                                <button class="interaction-btn">
+                                    <span class="interaction-icon">📤</span>
+                                    <span>Compartir</span>
+                                </button>
+                            </div>
+                        </article>
+
+                        <article class="post">
+                            <div class="post-header">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=60&h=60&fit=crop&crop=face" alt="Carlos" class="post-avatar">
+                                <div class="post-info">
+                                    <h4>Carlos Ruiz</h4>
+                                    <div class="post-meta">
+                                        <time>Ayer a las 18:30</time>
+                                        <span class="privacy-icon">👥</span>
+                                    </div>
+                                </div>
+                                <button class="post-menu">⋯</button>
+                            </div>
+                            <div class="post-content">
+                                <p>¡Felicidades <span class="mention">@Juan felipe</span> por el reconocimiento en la conferencia de diseño! Te lo mereces 🏆</p>
+                            </div>
+                            <div class="post-stats">
+                                <div class="reactions">
+                                    <span class="reaction-icons">👍❤️🎉</span>
+                                    <span class="reaction-count">Juan Felipe y 15 personas más</span>
+                                </div>
+                                <div class="engagement-stats">
+                                    <span>12 comentarios</span>
+                                    <span>5 veces compartido</span>
+                                </div>
+                            </div>
+                            <div class="post-interactions">
+                                <button class="interaction-btn like-btn liked">
+                                    <span class="interaction-icon">👍</span>
+                                    <span>Te gusta</span>
+                                </button>
+                                <button class="interaction-btn">
+                                    <span class="interaction-icon">💬</span>
+                                    <span>Comentar</span>
+                                </button>
+                                <button class="interaction-btn">
+                                    <span class="interaction-icon">📤</span>
+                                    <span>Compartir</span>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div id="info-section" class="section">
+                    <div class="info-header">
+                        <h2>Información</h2>
+                        <button class="edit-btn">Editar detalles</button>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-category">
+                            <h3>Información de contacto y básica</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <span class="info-icon">📧</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Email</span>
+                                        <span class="info-value">juan.felipe12@email.com</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">📱</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Teléfono</span>
+                                        <span class="info-value">+34 612 345 678</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">🎂</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Fecha de nacimiento</span>
+                                        <span class="info-value">15 de marzo de 1992</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">📍</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Vive en</span>
+                                        <span class="info-value">Cali, Colombia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-category">
+                            <h3>Trabajo y educación</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <span class="info-icon">💼</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Trabajo</span>
+                                        <span class="info-value">Analista de datos en Google</span>
+                                        <span class="info-date">2020 - presente</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">🎓</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Universidad</span>
+                                        <span class="info-value">Universidad del valle</span>
+                                        <span class="info-date">Profesional en base de datos</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-category">
+                            <h3>Lugares donde ha vivido</h3>
+                            <div class="info-items">
+                                <div class="info-item">
+                                    <span class="info-icon">🏠</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Ciudad actual</span>
+                                        <span class="info-value">Cali, Colombia</span>
+                                    </div>
+                                </div>
+                                <div class="info-item">
+                                    <span class="info-icon">🏡</span>
+                                    <div class="info-details">
+                                        <span class="info-label">Ciudad natal</span>
+                                        <span class="info-value">Cali, Colombia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="photos-section" class="section">
+                    <div class="photos-header">
+                        <h2>Fotos</h2>
+                        <div class="photos-nav">
+                            <button class="photos-tab active">Fotos de Felipe</button>
+                            <button class="photos-tab">Álbumes</button>
+                        </div>
+                    </div>
+                    <div class="photos-grid">
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1460661419201-fd4cecdf8a8b?w=200&h=200&fit=crop" alt="Inauguración galería" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">❤️ 23</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1586953208448-b95a79798f07?w=200&h=200&fit=crop" alt="Mi espacio de trabajo" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">👍 18</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=200&h=200&fit=crop" alt="Cena con amigos" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">❤️ 31</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1551632811-561732d1e306?w=200&h=200&fit=crop" alt="Senderismo" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🏔️ 27</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=200&h=200&fit=crop" alt="Conferencia de diseño" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🎯 42</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=200&h=200&fit=crop" alt="Vacaciones en la playa" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🌅 35</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=200&h=200&fit=crop" alt="Proyecto artístico" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🎨 29</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1511895426328-dc8714191300?w=200&h=200&fit=crop" alt="Reunión familiar" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">👨‍👩‍👧‍👦 45</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?w=200&h=200&fit=crop" alt="Trabajando en cafetería" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">☕ 22</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=200&h=200&fit=crop" alt="Festival de música" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🎵 38</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=200&h=200&fit=crop" alt="Graduación" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🎓 67</span>
+                            </div>
+                        </div>
+                        <div class="photo-item">
+                            <img src="https://images.unsplash.com/photo-1552053831-71594a27632d?w=200&h=200&fit=crop" alt="Mi perro Max" class="photo">
+                            <div class="photo-overlay">
+                                <span class="photo-likes">🐕 52</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="boxes-section" class="section">
+                    <h2>Más información</h2>
+                    <div class="boxes-container">
+                        <div class="box-item">
+                            <div class="box-header">
+                                <span class="box-icon">🏆</span>
+                                <h3>Logros</h3>
+                            </div>
+                            <div class="box-content">
+                                <div class="achievement">
+                                    <span class="achievement-icon">🥇</span>
+                                    <div class="achievement-info">
+                                        <h4>Premio Mejor Analista 2023</h4>
+                                        <p>Reconocimiento por excelencia en analista del año</p>
+                                    </div>
+                                </div>
+                                <div class="achievement">
+                                    <span class="achievement-icon">📜</span>
+                                    <div class="achievement-info">
+                                        <h4>Certificación Adobe Expert</h4>
+                                        <p>Especialista certificado en Creative Suite</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="box-item">
+                            <div class="box-header">
+                                <span class="box-icon">❤️</span>
+                                <h3>Intereses</h3>
+                            </div>
+                            <div class="box-content">
+                                <div class="interests-grid">
+                                    <span class="interest-tag">🎨 Arte Digital</span>
+                                    <span class="interest-tag">📸 Fotografía</span>
+                                    <span class="interest-tag">🏔️ Senderismo</span>
+                                    <span class="interest-tag">📚 Lectura</span>
+                                    <span class="interest-tag">🎵 Música Indie</span>
+                                    <span class="interest-tag">☕ Café de Especialidad</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="box-item">
+                            <div class="box-header">
+                                <span class="box-icon">📅</span>
+                                <h3>Eventos próximos</h3>
+                            </div>
+                            <div class="box-content">
+                                <div class="event">
+                                    <div class="event-date">
+                                        <span class="event-day">15</span>
+                                        <span class="event-month">DIC</span>
+                                    </div>
+                                    <div class="event-info">
+                                        <h4>Conferencia de Diseño UX</h4>
+                                        <p>Madrid Design Week</p>
+                                    </div>
+                                </div>
+                                <div class="event">
+                                    <div class="event-date">
+                                        <span class="event-day">22</span>
+                                        <span class="event-month">DIC</span>
+                                    </div>
+                                    <div class="event-info">
+                                        <h4>conferencia futuro del analisis de datos con IA</h4>
+                                        <p>Museo Reina Sofía</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <aside class="right-sidebar">
+            <div class="sidebar-widget">
+                <h3>Contactos</h3>
+                <div class="contacts-list">
+                    <div class="contact-item">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=32&h=32&fit=crop&crop=face" alt="Carlos" class="contact-avatar">
+                        <span class="contact-name">Carlos Ruiz</span>
+                        <span class="contact-status online"></span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=32&h=32&fit=crop&crop=face" alt="Ana" class="contact-avatar">
+                        <span class="contact-name">Ana López</span>
+                        <span class="contact-status online"></span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=32&h=32&fit=crop&crop=face" alt="Luis" class="contact-avatar">
+                        <span class="contact-name">Luis Martín</span>
+                        <span class="contact-status away"></span>
+                    </div>
+                    <div class="contact-item">
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=32&h=32&fit=crop&crop=face" alt="Sofia" class="contact-avatar">
+                        <span class="contact-name">Sofia Chen</span>
+                        <span class="contact-status offline"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sidebar-widget">
+                <h3>Páginas que te gustan</h3>
+                <div class="pages-list">
+                    <div class="page-item">
+                        <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=32&h=32&fit=crop" alt="Adobe" class="page-avatar">
+                        <span class="page-name">Adobe Creative</span>
+                    </div>
+                    <div class="page-item">
+                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?w=32&h=32&fit=crop" alt="Design Museum" class="page-avatar">
+                        <span class="page-name">Design Museum</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
